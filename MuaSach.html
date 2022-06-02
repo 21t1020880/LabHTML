@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Books.css">
+    <title>ĐỨC ĐẠT - BOOK STORE</title>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="images/BOOK_STORE_LOGO.png" alt="logo" width="90px" height="90px">
+        </div>
+        <div id="tool">
+            <p><a href="" class="text-1">Mua sách</a></p>
+            <p><a href="" class="text-1">Liên kết</a></p>
+            <p><a href="Tacgia.html" class="text-1">Tác giả</a></p>
+            <p><a href="" class="text-1">Thể loại</a></p>
+            <p><a href="index.html" class="text-1">Trang chủ</a></p> 
+        </div>
+    </div>
+    <div id="menu">
+        <div id="h" style="text-align: center; cursor:pointer; background-color: #0CC; font-size: 2rem;">MENU</div>
+        <ul style="padding-left: 20px; margin-top: 10px;">
+            <li style="list-style: none;font-size: 2rem;"><a href="index.html">Trang chủ</a></li>
+            <li style="list-style: none;font-size: 2rem;"><a href="Tacgia.html">Tác giả</a></li>
+            <li style="list-style: none;font-size: 2rem;"><a href="#">Thể loại</a></li>
+            <li style="list-style: none;font-size: 2rem;"><a href="#">Liên kết</a></li>
+            <li style="list-style: none;font-size: 2rem;"><a href="MuaSach.html">Mua sách</a></li>
+        </ul>
+    </div>
+    <div id="container">
+        <div id="banner">
+        </div>
+        <div id="body">
+            <div id="New">
+                <p class="text-2">Tác giả nổi bật</p>
+                <ol>
+                    <li class="ds"><a href="Tacgia.html">Nam Cao</a></li>
+                    <li class="ds"><a href="Tacgia.html">Vũ Trọng Phụng</a></li>
+                    <li class="ds"><a href="Tacgia.html">Ngô Tất Tố</a></li>
+                    <li class="ds"><a href="Tacgia.html">Nguyễn Du</a></li>
+                    <li class="ds"><a href="Tacgia.html">Phùng Quán</a></li>
+                </ol>
+            </div>
+            <div id="Book">
+                <div id="form" style="width: 1200px;">
+                    <div id="form_mua">
+                        <form action="" method="post">
+                            <h1>Form thông tin cần thiết</h1>
+                            <div class="input-box">
+    
+                                <input type="text" placeholder="Nhập họ và tên đệm (nếu có)">
+                            </div>
+                            <div class="input-box">
+    
+                                <input type="text" placeholder="Nhập tên">
+                            </div>
+                            <div class="input-box">
+                                <div class="col-6">
+                                    <label for="ngaysinh">Ngày sinh</label>
+                                    <br>
+                                    <input type="date" id="ngaysinh"/>
+                                </div>
+                                <div class="col-6">
+                                    <label for="gioitinh">Giới tính</label>
+                                    <br>
+                                    <select id="gioitinh">
+                                        <option value="nam">Nam</option>
+                                        <option value="nu">Nữ</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="input-box">
+                                <span>Phương thức thanh toán</span>
+                                <br>
+                                <input type="checkbox" id="Tienmat"> 
+                                <label for="Tienmat">Tiền mặt</label>
+                                <div class="margin_b"></div>
+                                <input type="checkbox" id="Thetindung"> 
+                                <label for="Thetindung">Thẻ tín dụng</label>
+                                <div class="margin_b"></div>
+                                <input type="checkbox" id="Vidientu"> 
+                                <label for="Vidientu">Ví điện tử</label>
+                            </div>
+                            <div class="input-box">
+                                <label for="gioithieu">Địa chỉ và số điện thoại</label>
+                                <br>
+                                <textarea id="gioithieu"></textarea>
+                            </div>
+                            
+                            <div class="btn-box">
+                                <button type="submit">
+                                    Đặt mua
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>               
+            <div id="Hot">
+                <p class="text-2">Sách đang hot</p>
+                <ol>
+                    <li class="ds"><a href="Sach-Chi-Pheo.html">Chí Phèo</a></li>
+                    <li class="ds"><a href="Sach-Tuoi-tho-du-doi.html">Tuổi thơ dữ dội</a></li>
+                    <li class="ds"><a href="Sach-Truyen-Kieu.html">Truyện Kiều</a></li>
+                    <li class="ds"><a href="Sach-Tat-den.html">Tắt đèn</a></li>
+                    <li class="ds"><a href="Sach-So-Do.html">Số đỏ</a></li>
+                </ol>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var h="auto";
+            function ThayDoi(id){
+                var div = document.getElementById(id);
+                if(h=="auto"){
+                    div.style.height = "35px";
+                    h="35";
+                } else if (h==35){
+                    div.style.height = "auto";
+                    h= "auto";
+                }
+            }
+            document.getElementById('h').onclick = function(){ThayDoi('menu')};
+        </script>
+    </div>
+    <div id="Zalo"><a href="https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F"><img src="images/icon-zalo.png" alt="zalo"></a></div>
+    <br style="clear:both;">
+    <footer>
+        <div id="anh">
+            <img src="images/BOOK_STORE_LOGO.png" alt="logo" width="250px" height="250px">
+        </div>
+        <div id="box">
+            <div class="Box">
+                <div class="icon">
+                    <img src="images/3.png" alt="icon" width="50px" height="50px">
+                </div>
+                <div class="text-3">
+                    <div>Email: ducdatBook@gmail.com</div>
+                </div>
+            </div>
+            <div class="Box">
+                <div class="icon">
+                    <img src="images/2.png" alt="icon" width="50px" height="50px">
+                </div>
+                <div class="text-3">                   
+                    <div>123 Hùng Vương, Đông Anh, Hà Nội</div>
+                </div>
+            </div>
+            <div class="Box">
+                <div class="icon">
+                    <img src="images/1.png" alt="icon" width="50px" height="50px">
+                </div>
+                <div class="text-3">                 
+                    <div>Số di động: 096 XXX 909</div>
+                    <div>Điện thoại bàn: 0232 XXX 123</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
